@@ -1,0 +1,30 @@
+body {
+    background-color: #1E1E1E;
+  }
+
+p, a, h1{
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+.timer{
+    font-size: 50px;
+}
+
+.bar{
+    background-color: #00c2c2;
+    width: 0%;
+    height: 100%;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+
+}
+
+.progress{
+    background-color: rgb(130, 130, 130);
+    height: 20px;
+    width: 80%;
+    border-radius: 9px;
+    border-color: #ffffff;
+    border-width: 3.5px;
+    border-style: inset;
+}
