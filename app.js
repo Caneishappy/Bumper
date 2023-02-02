@@ -1,12 +1,8 @@
 const links = [
-    "https://rocket-league.com/ajaxfunctions/bumpTrade.php?alias=1a9c7a0d-3e9b-4004-8186-9642a4ce2535", 
-    "https://rocket-league.com/ajaxfunctions/bumpTrade.php?alias=35149785-a037-4ab0-aed1-f5ee6ceaf6da", 
-    "https://rocket-league.com/ajaxfunctions/bumpTrade.php?alias=6211dd39-0dca-46cb-9306-25c3138347aa",
-    //"https://static.rocket-league.com/assets/178b998168fa0854e15a7ccb45c7e13141d12649/images/backgrounds/footer.jpg",
+    //Your links
     ];
     
     let time = 905000
-    
     
     
     async function openLinks() {
