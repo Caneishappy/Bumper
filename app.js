@@ -25,12 +25,10 @@ const links = [
     let timerid =  setInterval(() => {//Loop for the timer
         let bar = document.getElementById("bar");
         let width = (((t * 1000)*100) / time) * -1 + 100;
-        //console.log(time + " " + t + " : " + (((t * 1000)*100) / time)  * -1 + 100 + " =w= " + width)
         bar.style.width = width + "%";
         t --
         let MTimer = Math.floor(t / 60);
         let STimer = Math.floor(t - MTimer * 60 );
-        //console.log(String(MTimer) + "min " +  String(STimer) + "s"); 
         document.getElementById("timer").innerHTML = `
         ${"Next bump in: " + String(MTimer) + "min " +  String(STimer) + "s"}
         `;
@@ -52,12 +50,10 @@ const links = [
     let timerid =  setInterval(() => {//Loop for the timer
         let bar = document.getElementById("bar");
         let width = time / (((t * 1000)*100) / time)  * -1 + 100
-        //console.log(time + " " + t + " : " + ((((t * 1000)*100) / time)  * -1 + 100) + " =w= " + width)
         bar.style.width = width + "%";
         t --
         let MTimer = Math.floor(t / 60);
         let STimer = Math.floor(t - MTimer * 60 );
-        //console.log(String(MTimer) + "min " +  String(STimer) + "s"); 
         document.getElementById("timer").innerHTML = `
         ${"Next bump in: " + String(MTimer) + "min " +  String(STimer) + "s"}
          \n
