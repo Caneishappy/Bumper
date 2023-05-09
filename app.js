@@ -1,6 +1,7 @@
 const links0 = [
     // Your links go here. Like this:
     //  "https://example.com",
+    "https://example.com",
 ];
 
 const links1= [
@@ -73,7 +74,11 @@ if (links1 == "" && links2 == "") {
 setInterval(() => {
     //Loop
     let bar = document.getElementById("bar");
-    let width = (t / (time / 3 / 1000)) * 100 * -1 + 100;
+    if (links1 == "" || links2 == "") {
+        width = (t / (time / 1000)) * 100 * -1 + 100;
+    } else {
+        width = (t / (time / 3 / 1000)) * 100 * -1 + 100;
+    }
     bar.style.width = width + "%";
     let MTimer = Math.floor(t / 60);
     let STimer = Math.floor(t - MTimer * 60);
