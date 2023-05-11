@@ -90,11 +90,12 @@ setInterval(() => {
             `;
     t--;
     if (t <= 0) {
-        if (links1 != "" || links2 != "") {
+        if (links1 == "" || links2 == "") {
             t = Math.floor(time / 1000);
         } else {
             t = Math.floor(time / 1000 / 3);
         }
+        
         console.log("2+/3 Running: " + counter);
         if (counter == 0) {
             openLinks(links0);
