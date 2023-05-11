@@ -66,7 +66,7 @@ async function ThirdInterval() {
     }
 }
 let counter = 1;
-if (links1 == "" && links2 == "") {
+if (links1 == "" || links2 == "") {
     t = Math.floor(time / 1000);
 } else {
     t = Math.floor(time / 1000 / 3);
